@@ -1,12 +1,10 @@
 package cn.video110.ressadnatomdemo.wcmchannel;
 
-import cn.video110.ressadnatomdemo.wcmdocument.WCMDOCUMENT;
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.List;
 
 /**
  * 栏目
@@ -22,6 +20,24 @@ public class WCMCHANNEL {
     private Integer CHANNELID;
 
     /**
+     * 站点主键
+     */
+    @Column(name = "SITEID")
+    private Integer sITEID;
+
+    /**
+     * 栏目状态
+     */
+    @Column(name = "STATUS")
+    private Integer sTATUS;
+
+    /**
+     * 父节点id
+     */
+    @Column(name = "PARENTID")
+    private Integer pARENTID;
+
+    /**
      * 栏目名
      */
     private String CHNLDESC;
@@ -29,12 +45,7 @@ public class WCMCHANNEL {
     /**
      * 链接
      */
-    private String CHNLDATAPATH;
-
-    /**
-     * 栏目下文档列表
-     */
-    @OneToMany
-    private List<WCMDOCUMENT> WCMDOCUMENTList;
+    @Column(name = "CHNLDATAPATH")
+    private String cHNLDATAPATH;
 
 }

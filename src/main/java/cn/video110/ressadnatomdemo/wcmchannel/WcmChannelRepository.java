@@ -2,7 +2,9 @@ package cn.video110.ressadnatomdemo.wcmchannel;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface WcmChannelRepository
-        extends JpaRepository<WCMCHANNEL, Long> {
+import java.util.List;
 
+public interface WcmChannelRepository
+        extends JpaRepository<WCMCHANNEL, Integer> {
+    List<WCMCHANNEL> findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull(Integer SITEID, Integer STATUS, Integer PARENTID);
 }

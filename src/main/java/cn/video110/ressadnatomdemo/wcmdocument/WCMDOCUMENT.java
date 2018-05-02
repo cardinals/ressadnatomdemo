@@ -2,6 +2,7 @@ package cn.video110.ressadnatomdemo.wcmdocument;
 
 import lombok.Data;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.sql.Timestamp;
@@ -23,6 +24,11 @@ public class WCMDOCUMENT {
      * 文档标题
      */
     private String DOCTITLE;
+    /**
+     * 所属栏目
+     */
+    @Column(name = "DOCCHANNEL")
+    private Integer dOCCHANNEL;
 
     /**
      * 发布后的链接地址
