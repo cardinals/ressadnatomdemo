@@ -38,7 +38,7 @@ public class FeedController {
         channel.setLink(wcmchannel.get().getCHNLDATAPATH());
         channel.setDescription(wcmchannel.get().getCHNLDESC());
 
-        List<WCMDOCUMENT> WCMDOCUMENTList = wcmDocumentRepository.findByDOCCHANNEL(docchannel);
+        List<WCMDOCUMENT> WCMDOCUMENTList = wcmDocumentRepository.findByDOCCHANNELAndDOCSTATUS(docchannel,10);
         List<Item> items = new ArrayList<Item>();
         WCMDOCUMENTList.stream()
                 .filter(s -> s != null)

@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface WcmDocumentRepository
         extends JpaRepository<WCMDOCUMENT, Integer> {
-    List<WCMDOCUMENT> findByDOCCHANNEL(Integer docchannel);
+    List<WCMDOCUMENT> findByDOCCHANNELAndDOCSTATUS(Integer docchannel,Integer docstatus);
+    List<WCMDOCUMENT> findByDOCSTATUSIn(List<Integer> status);
 }

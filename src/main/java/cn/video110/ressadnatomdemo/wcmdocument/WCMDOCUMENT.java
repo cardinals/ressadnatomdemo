@@ -24,6 +24,13 @@ public class WCMDOCUMENT {
      * 文档标题
      */
     private String DOCTITLE;
+
+    /**
+     * 文档状态
+     */
+    @Column(name = "DOCSTATUS")
+    private Integer dOCSTATUS;
+
     /**
      * 所属栏目
      */
