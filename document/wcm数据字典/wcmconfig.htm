@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMCONFIG</title>
+</head>
+<body>	
+	<p>WCMCONFIG表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 系统配置 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>CONFIGID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CTYPE</td>
+	<td>类型</td>
+	<td>0</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CKEY</td>
+	<td>属性名(键)</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>CVALUE</td>
+	<td>属性值(值)</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CDESC</td>
+	<td>该项目配置的说明性描述</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>ENCRYPTED</td>
+	<td>属性值是否加密存储</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SITEID</td>
+	<td>所属于站点编号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><strong>保留</strong></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMDOCUMENT</title>
+</head>
+<body>	
+	<p>WCMDOCUMENT表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 文档信息 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>DOCID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCCHANNEL</td>
+	<td>所属栏目</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCVERSION</td>
+	<td>版本号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCTYPE</td>
+	<td>类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#type">类型</a></td></tr>
+<tr>
+	<td>DOCTITLE</td>
+	<td>文档标题</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+<tr>
+	<td>DOCSOURCE</td>
+	<td>文档来源</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmsource.htm">WCMSOURCE</a>.SOURCEID</td></tr>
+<tr>
+	<td>DOCSECURITY</td>
+	<td>安全级别</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmsecurity.htm">WCMSECURITY</a>.SECURITYID</td></tr>
+<tr>
+	<td>DOCSTATUS</td>
+	<td>文档状态</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmstatus.htm">WCMSTATUS</a>.STATUSID</td></tr>
+<tr>
+	<td>DOCKIND</td>
+	<td>文档分类</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#kind">分类</a></td></tr>
+<tr>
+	<td>DOCCONTENT</td>
+	<td>纯文本内容</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCHTMLCON</td>
+	<td>HTML文本内容</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCABSTRACT</td>
+	<td>内容摘要</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>2000</td>
+	<td></td></tr>
+<tr>
+	<td>DOCKEYWORDS</td>
+	<td>关键词</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>DOCRELWORDS</td>
+	<td>相关词</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#docrelword">相关词</a></td></tr>
+<tr>
+	<td>DOCPEOPLE</td>
+	<td>涉及的人物</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#docpeople">首页标题</a></td></tr>
+<tr>
+	<td>DOCPLACE</td>
+	<td>涉及的地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>DOCAUTHOR</td>
+	<td>作者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>DOCEDITOR</td>
+	<td>编辑</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>DOCAUDITOR</td>
+	<td>编审</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>DOCOUTUPID</td>
+	<td>输入编号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#outupid">输入编号</a></td></tr>
+<tr>
+	<td>DOCVALID</td>
+	<td>有效时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCPUBURL</td>
+	<td>发布后的链接地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>400</td>
+	<td></td></tr>
+<tr>
+	<td>DOCPUBTIME</td>
+	<td>发布时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCRELTIME</td>
+	<td>撰写时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCWORDSCOUNT</td>
+	<td>纯文本内容单词数</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCPRO</td>
+	<td>文档属性</td>
+	<td>1</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>RIGHTDEFINED</td>
+	<td>独立的权限设置</td>
+	<td>0</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TITLECOLOR</td>
+	<td>标题的颜色</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>varchar</td>
+	<td>20</td>
+	<td></td></tr>
+<tr>
+	<td>TEMPLATEID</td>
+	<td>设置的模板编号</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SCHEDULE</td>
+	<td>计划任务编号</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCNO</td>
+	<td>其它编号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>4000</td>
+	<td><a href="#docno">其它编号</a></td></tr>
+<tr>
+	<td>DOCFLAG</td>
+	<td>标记</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#flag">标记</a></td></tr>
+<tr>
+	<td>EDITOR</td>
+	<td>文档编辑器</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td><strong>保留</strong></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>HITSCOUNT</td>
+	<td>点击数</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCPUBHTMLCON</td>
+	<td>发布HTML内容</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SUBDOCTITLE</td>
+	<td>副标题</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>ATTACHPIC</td>
+	<td>是否附图</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DOCLINK</td>
+	<td>链接地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td><a href="#doclink">链接地址</a></td></tr>
+<tr>
+	<td>DOCFILENAME</td>
+	<td>外部文件名</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>DOCFROMVERSION</td>
+	<td>从哪个版本恢复</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>OPERTIME</td>
+	<td>删除时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>OPERUSER</td>
+	<td>删除操作用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>FLOWOPERATIONMARK</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>FLOWPREOPERATIONMARK</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>FLOWOPERATIONMASKENUM</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>2000</td>
+	<td></td></tr>
+<tr>
+	<td>DOCSOURCENAME</td>
+	<td>文档来源名称</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>DOCLINKTO</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>300</td>
+	<td></td></tr>
+<tr>
+	<td>DOCMIRRORTO</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>300</td>
+	<td></td></tr>
+<tr>
+	<td>RANDOMSERIAL</td>
+	<td>表单文档随机查询号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>POSTUSER</td>
+	<td>表单文档提交用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>varchar</td>
+	<td>50</td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+		<strong>备注</strong>
+		<ol>
+			<li><a name="type"></a>类型：四个有效值[文本文档=10,HTML文档=20,链接文档=30,外部文件文档=40]</li>
+			<li><a name="kind"></a>分类：在元数据选件中,该列值是所属视图编号</li>
+			<li><a name="docpeople"></a>首页标题：普通文档用作首页标题,在图片库是图片涉及的相关人物</li>
+			<li><a name="outupid"></a>输入编号：一般可用于数据交换,记录外部的唯一编号</li>
+			<li><a name="docno"></a>其它编号：在表单选件中,记录表单文档的唯一编号(如果有的话);场景式服务亦有用</li>
+			<li><a name="flag"></a>标记：在表单选件中,记录的是所属栏目的表单编号(<a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID)</li>			
+			<li><a name="docrelword"></a>在图片库中,记录各缩放图的文件名</li>
+		</ol>
+	</p>
+</body>
+</html>

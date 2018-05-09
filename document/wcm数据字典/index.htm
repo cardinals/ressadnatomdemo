@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>Index</title>
+	<style type="text/css">
+		h1{
+			text-align:center;
+			font-size:26px;
+		}
+		caption{			
+			padding:10px;
+			font-style:italic;
+			font-weight:bold;
+			font-size:14px;
+		}		
+	</style>
+</head>
+<body>	
+<h1>TRS内容协作平台(WCM)数据字典</h1>
+<p>
+本数据字典包含WCM标准平台及与之一同运行的图片库,表单(不包含infogate应用),
+元数据等三个选件在内的数据库表结构的说明.截止整理日期(2009-04-30),系统共有153个表.
+<strong>数据字典为开发文档，仅限公司内部使用</strong>
+</p>
+<p>
+<a href="table_list.htm">各表详细信息</a>
+<a href="ermapping.htm">E-R对应表</a>
+</p>
+
+<p>
+在深入了解每一个表的细节前,有必要了解一下文档的说明风格。
+<ul>
+<li>
+	每个表的描述由主要的三部分组成:
+	<ol>
+		<li>表名:如WCMDOCUMENT表.</li>
+		<li>
+			描述:简要说明该表存储的是什么信息<br/>
+			如果在该部分看到(<strong>保留</strong>)字样,则表示该表一般情况下不为外部使用.不需要关心其内部细节
+		</li>
+		<li>
+			结构:以列表的方式说明表的结构.如下表所示<br/>
+			<table class='table'>
+			<caption align="bottom">表结构说明</caption>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>DOCID<img src='css/pk.gif'/></td>
+					<td>文档编号</td>
+					<td>默认值</td>
+					<td><img src='css/yes.gif'/></td>
+					<td>int</td>
+					<td>100</td>
+					<td></td></tr>
+			</tbody>		
+			</table>
+			该表共有七列,每一行描述一个数据表字段的信息。
+			<ol type="A">
+				<li>列名：字段的名称，<img src='css/pk.gif'/>图标表示该列一该表的主键列</li>
+				<li>说明：字段的作用简要描述</li>
+				<li>默认值：字段的默认取值，如果没有则留空</li>
+				<li><img src='css/yes.gif'/>表示该字段允许空值，否则必须有值</li>
+				<li>类型：字段在mssql中的类型名</li>
+				<li>长度：如果该字段的类型是nvarchar，则标识该字段可容纳的字符长度；否则留空</li>
+				<li>备注：对于该列的一些补充说明，可能链接到另外一个表，也可能是链接到当前表的备注部分</li>			
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>
+	在表结构的说明之后，可能会有<strong>备注</strong>部分。该部分是对表结构列的一些补充
+</li>
+<li>
+	表结构中的类型是以mssql类型名表示的，对应于其它数据库的类型名如下表所示
+	<table class="table">
+	<caption align="bottom">数据类型对应表</caption>
+	<thead>
+		<tr>
+			<td>数据库</td>				
+			<td colspan=8>数据类型</td>			
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>mssql</td>
+			<td>int</td>
+			<td>bigint</td>
+			<td>smallint</td>
+			<td>tinyint</td>			
+			<td>(n)varchar</td>
+			<td>(n)char</td>
+			<td>datetime</td>
+			<td>(n)text</td>			
+		</tr>
+		<tr>
+			<td>oracle</td>
+			<td>int</td>
+			<td>number(38,0)</td>
+			<td>number(5,0)</td>
+			<td>number(5,0)</td>			
+			<td>varchar2</td>
+			<td>varchar2</td>
+			<td>date</td>
+			<td>clob</td>	
+		</tr>
+		<tr>
+			<td>db2</td>
+			<td>bigint</td>
+			<td>decimal(31,0)</td>
+			<td>int</td>
+			<td>int</td>			
+			<td>varchar</td>
+			<td>varchar</td>
+			<td>timestamp</td>
+			<td>clob</td>	
+		</tr>
+		<tr>
+			<td>sybase</td>
+			<td>int</td>
+			<td>bigint</td>
+			<td>smallint</td>
+			<td>tinyint</td>			
+			<td>nvarchar</td>
+			<td>nvarchar</td>
+			<td>datetime</td>
+			<td>text</td>	
+		</tr>
+		<tr>
+			<td>mysql</td>
+			<td>int</td>
+			<td>bigint</td>
+			<td>smallint</td>
+			<td>tinyint</td>			
+			<td>nvarchar</td>
+			<td>nvarchar</td>
+			<td>datetime</td>
+			<td>text</td>	
+		</tr>
+	</tbody>
+	</table>
+</li>
+<li>
+	对于nvarchar类型的长度，其它数据库对应的长度是mssql的两倍与4000中两个值的小者
+</li>
+</ul>
+</p>
+</body>
+</html>

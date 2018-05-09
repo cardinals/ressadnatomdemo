@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMUSER</title>
+</head>
+<body>	
+	<p>WCMUSER表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 用户信息 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>USERID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>STATUS</td>
+	<td>状态</td>
+	<td></td>
+	<td></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>USERNAME</td>
+	<td>用户名</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>PASSWORD</td>
+	<td>密码</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>NICKNAME</td>
+	<td>昵称</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>TRUENAME</td>
+	<td>真实名称</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>64</td>
+	<td></td></tr>
+<tr>
+	<td>ADDRESS</td>
+	<td>联系地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>TEL</td>
+	<td>联系电话</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>MOBILE</td>
+	<td>联系移动电话</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>EMAIL</td>
+	<td>电子邮件地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+<tr>
+	<td>REMINDERQUESTION</td>
+	<td>找回密码时的问题</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>REMINDERANSWER</td>
+	<td>找回密码时的问题的答案</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>IFPUBMYINFO</td>
+	<td>是否公开个人信息</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPLYTIME</td>
+	<td>开通时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>REGTIME</td>
+	<td>注册时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGINTIMES</td>
+	<td>成功登录次数</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGINTIME</td>
+	<td>上次登录时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGOUTTIME</td>
+	<td>上次退出系统时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>MSGINTERVAL</td>
+	<td>消息刷新时间间隔</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>VIEWINTERVAL</td>
+	<td>页面刷新时间间隔</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PRICE</td>
+	<td>用户稿费单价</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ISDELETED</td>
+	<td>是否已删除</td>
+	<td>0</td>
+	<td></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

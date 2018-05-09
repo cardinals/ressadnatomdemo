@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMCONTGRPMAP</title>
+</head>
+<body>	
+	<p>WCMCONTGRPMAP表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 联系人和联系人组之间的关联 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>CONTGRPID</td>
+	<td>联系人组编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmcontgroup.htm">WCMCONTGROUP</a>.GROUPID</td></tr>
+<tr>
+	<td>CONTACTID</td>
+	<td>联系人编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmcontact.htm">WCMCONTACT</a>.CONTRACTID</td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

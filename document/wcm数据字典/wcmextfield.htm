@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMEXTFIELD</title>
+</head>
+<body>	
+	<p>WCMEXTFIELD表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 系统扩展字段 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>EXTFIELDID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TABLENAME</td>
+	<td>扩展字段所属表名</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href="#tablename">表名</a></td></tr>
+<tr>
+	<td>FIELDNAME</td>
+	<td>名称</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>FIELDTYPE</td>
+	<td>类型</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>10</td>
+	<td></td></tr>
+<tr>
+	<td>FIELDMAXLEN</td>
+	<td>最大长度</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FIELDNULLABLE</td>
+	<td>是否允许空值</td>
+	<td>1</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FIELDDEFAULT</td>
+	<td>默认值</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FIELDSCALE</td>
+	<td>精度</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+	<strong>备注</strong>
+	<ol>
+		<li><a name="tablename"></a>表名：默认扩展字段只作用于<a href="wcmdocument.htm">WCMDOCUMENT表</a>.每个记录记录两次,另一条记录对应于WCMDOCBAK表</li>
+	</ol>
+	</p>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMMEETINGCONT</title>
+</head>
+<body>	
+	<p>WCMMEETINGCONT表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 网络会议的内容(<strong>保留</strong>) </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>CONTENTID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ROOMID</td>
+	<td>会议编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmmeetingroom.htm">WCMMEETINGROOM</a>.ROOMID</td></tr>
+<tr>
+	<td>CONTENT</td>
+	<td>内容</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>LISTENERID</td>
+	<td>内容接受者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ISPRIVATE</td>
+	<td>是否是私密会议</td>
+	<td>0</td>
+	<td></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

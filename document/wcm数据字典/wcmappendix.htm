@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMAPPENDIX</title>
+</head>
+<body>	
+	<p>WCMAPPENDIX表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 存储文档附件的基本信息，建立系统附件对象和文件系统的文件关联 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>APPENDIXID<img src='css/pk.gif'/></td>
+	<td>文档附件编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPDOCID</td>
+	<td>文档附件所属的文档编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href='wcmdocument.htm'>WCMDOCUMENT</a>.DOCID</td></tr>
+<tr>
+	<td>APPFILE</td>
+	<td>对应的文件系统文件名</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>255</td>
+	<td></td></tr>
+<tr>
+	<td>APPFILETYPE</td>
+	<td>文档附件的文件类型</td>
+	<td>-1</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPDESC</td>
+	<td>文档附件的描述</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>255</td>
+	<td></td></tr>
+<tr>
+	<td>APPLINKALT</td>
+	<td>文档附件的页面ALT</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>255</td>
+	<td></td></tr>
+<tr>
+	<td>APPSERN</td>
+	<td>文档附件在文档中的序号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPPROP</td>
+	<td>文档附件的属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPFLAG</td>
+	<td>文档附件的标记</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPTIME</td>
+	<td>文档附件的时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>APPAUTHOR</td>
+	<td>文档附件的作者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>APPEDITOR</td>
+	<td>文档附件的编者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>文档附件的扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>USEDVERSIONS</td>
+	<td>文档附件的版本号</td>
+	<td>1</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>numeric</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SRCFILE</td>
+	<td>文档附件的原文件名</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>FILEEXT</td>
+	<td>文档附件的扩展名</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>20</td>
+	<td></td></tr>
+<tr>
+	<td>ISIMPORTTOIMAGELIB</td>
+	<td>附件是否来自图片库</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#photolib">图片库</a></td></tr>
+<tr>
+	<td>RELATEDCOLUMN</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>varchar</td>
+	<td>200</td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+	<strong>备注:</strong>
+	<ol>
+		<li><a name='photolib'></a>图片库：当且仅当有图片库选件时有效。值为1时表示是来自图片库</li>
+	</ol>
+	</p>
+</body>
+</html>

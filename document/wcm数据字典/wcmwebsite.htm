@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMWEBSITE</title>
+</head>
+<body>	
+	<p>WCMWEBSITE表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 站点信息 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>SITEID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SITENAME</td>
+	<td>名称(唯一标识)</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>SITEDESC</td>
+	<td>描述说明</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>FTPSERVER</td>
+	<td>分发:FTP目标</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#distribute">分发</a></td></tr>
+<tr>
+	<td>FTPUSER</td>
+	<td>分发:FTP用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>FTPPASSWORD</td>
+	<td>分发:FTP密码</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>FTPFOLDER</td>
+	<td>分发:FTP存放目录</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>DATAPATH</td>
+	<td>存放位置</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#datapath">发布设置</a></td></tr>
+<tr>
+	<td>WEBHTTP</td>
+	<td>HTTP域</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#datapath">发布设置</a></td></tr>
+<tr>
+	<td>SITEPROP</td>
+	<td>站点属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PARENTID</td>
+	<td>父站点编号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SITEORDER</td>
+	<td>序号</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>HOMETEMPLATEID</td>
+	<td>首页模板编号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#tempid">模板</a></td></tr>
+<tr>
+	<td>SITEORDERBY</td>
+	<td>排序方式</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PUBSTATUSES</td>
+	<td>允许发布的文档状态</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>varchar</td>
+	<td>200</td>
+	<td><a href="#pubstatus">发布状态</a></td></tr>
+<tr>
+	<td>SCHEDULE</td>
+	<td>计划任务编号</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#schedule">计划任务</a></td></tr>
+<tr>
+	<td>STATUS</td>
+	<td>状态</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PUBLISHPRO</td>
+	<td>发布属性</td>
+	<td>1</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td><strong>保留</strong></td></tr>
+<tr>
+	<td>OPERUSER</td>
+	<td>删除站点用户名</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href="wcmuser.htm">WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>OPERTIME</td>
+	<td>被删除的时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SITETYPE</td>
+	<td>类型</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+		<strong>备注</strong>
+		<ol>
+			<li><a name="distribute"></a>分发:相关字段保留,信息见<a href="wcmpublishdistribution.htm">WCMPUBLISHDISTRIBUTION</a>表</li>
+			<li><a name="datapath"></a>发布设置:相关字段保留,信息见<a href="wcmfolderpublishconfig.htm">WCMFOLDERPUBLISHCONFIG</a>表</li>
+			<li><a name="tempid"></a>模板:保留,见<a href="wcmtemplateemploy.htm">WCMTEMPLATEEMPLOY</a>表</li>
+			<li><a name="pubstatus"></a>发布状态:保留,见<a href="wcmpubstatusconfig.htm">WCMPUBSTATUSCONFIG</a>表</li>
+			<li><a name='schedule'></a>计划任务:<a href='wcmschedule.htm'>计划任务</a> </li>
+		</ol>
+	</p>
+</body>
+</html>

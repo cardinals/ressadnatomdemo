@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMPUBLISHDISTRIBUTION</title>
+</head>
+<body>	
+	<p>WCMPUBLISHDISTRIBUTION表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 发布分发 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>PUBLISHDISTRIBUTIONID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERTYPE</td>
+	<td>文件夹类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERID</td>
+	<td>文件夹编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TARGETTYPE</td>
+	<td>分发目标类型</td>
+	<td>'FILE'</td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>TARGETSERVER</td>
+	<td>分发目标服务器地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>LOGINUSER</td>
+	<td>登录用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>LOGINPASSWORD</td>
+	<td>登录密码</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>20</td>
+	<td></td></tr>
+<tr>
+	<td>DATAPATH</td>
+	<td>存放位置</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>ENABLED</td>
+	<td>启用配置</td>
+	<td>1</td>
+	<td></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>30</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ANONYMFTP</td>
+	<td>使用匿名FTP</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TARGETPORT</td>
+	<td>目标服务器端口</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PASSIVEMODE</td>
+	<td>使用FTP被动模式</td>
+	<td>1</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMCHANNELCHILDINDEXQUOTE</title>
+</head>
+<body>	
+	<p>WCMCHANNELCHILDINDEXQUOTE表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 栏目引用关联信息：触发发布内容 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>TEMPLATEID</td>
+	<td>模板编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmtemplate.htm">WCMTEMPLATE</a>.TEMPID</td></tr>
+<tr>
+	<td>FOLDERTYPE</td>
+	<td>文件夹类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERID</td>
+	<td>文件夹编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>QUOTECHANNELID</td>
+	<td>被引用的栏目编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+	<strong>备注</strong>
+	<ol>
+		<li>FOLDERTYPE,FOLDERID共同确定是哪个对象引用了相应的栏目</li>
+		<li>QUOTECHANNELID确定的栏目发布时触发其它栏目的发布</li>
+	</ol>
+	</p>
+</body>
+</html>

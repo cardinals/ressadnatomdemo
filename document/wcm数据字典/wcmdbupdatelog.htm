@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMDBUPDATELOG</title>
+</head>
+<body>	
+	<p>WCMDBUPDATELOG表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> WCM系统数据库更新日志记录(<strong>保留</strong>) </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>DBUPDATELOGID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGTITLE</td>
+	<td>日志标题</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>LOGMEMO</td>
+	<td>更新详细说明</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>2000</td>
+	<td></td></tr>
+<tr>
+	<td>SUBMITOR</td>
+	<td>提交者</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>TABLENAME</td>
+	<td>更新修改的系统表名</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>LOGTYPE</td>
+	<td>类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SQLSERVER</td>
+	<td>MS SQLServer的脚本</td>
+	<td></td>
+	<td></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ORACLESQL</td>
+	<td>Oracle的脚本</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>DB2SQL</td>
+	<td>DB2的脚本</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SYSBASESQL</td>
+	<td>Sybase的脚本</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>ntext</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>30</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

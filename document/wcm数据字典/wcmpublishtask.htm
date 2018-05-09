@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMPUBLISHTASK</title>
+</head>
+<body>	
+	<p>WCMPUBLISHTASK表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 发布任务信息 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>PUBLISHTASKID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PUBLISHTYPE</td>
+	<td>发布类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TASKPRIORITY</td>
+	<td>任务优先级</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TASKSTATUS</td>
+	<td>任务所处状态</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERTYPE</td>
+	<td>发布的文件夹类型</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERID</td>
+	<td>发布的文件夹编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CONTENTIDS</td>
+	<td>发布的内容编号序列</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>400</td>
+	<td></td></tr>
+<tr>
+	<td>TASKTITLE</td>
+	<td>任务简要说明</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>400</td>
+	<td></td></tr>
+<tr>
+	<td>TASKDESC</td>
+	<td>任务描述</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>3000</td>
+	<td></td></tr>
+<tr>
+	<td>STARTTIME</td>
+	<td>任务开始时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ENDTIME</td>
+	<td>任务结束时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TIMEUSED</td>
+	<td>发布耗时</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PAGETASKCOUNT</td>
+	<td>页面任务计数</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>HASWARNINGS</td>
+	<td>是否有潜在错误警告</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ANALYZEERROR</td>
+	<td>任务分析错误信息</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>2000</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>30</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CONTENTTYPE</td>
+	<td>发布内容的对象类型</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>TASKURL</td>
+	<td>任务链接</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>DETAILPAGES</td>
+	<td>任务发布的细览页面数</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>OUTLINEPAGES</td>
+	<td>任务发布的概览页面数</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>FOLDERIDS</td>
+	<td>发布的文件夹编号序列</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>400</td>
+	<td></td></tr>
+<tr>
+	<td>ISSCHEDULEDTASK</td>
+	<td>是否为计划发布任务</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

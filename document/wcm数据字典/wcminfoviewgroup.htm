@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMINFOVIEWGROUP</title>
+</head>
+<body>	
+	<p>WCMINFOVIEWGROUP表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 自定义表单一个视图内部的数据块，对应InfoPath的Section或者Reapeating Table </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>IVGROUPID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>INFOVIEWID</td>
+	<td>所属表单编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID</td></tr>
+<tr>
+	<td>IVVIEWID</td>
+	<td>所属视图编号</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcminfoviewview.htm">WCMINFOVIEWVIEW</a>.IVVIEWID</td></tr>
+<tr>
+	<td>GROUPNAME</td>
+	<td>分组名称</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>GROUPDESC</td>
+	<td>分组描述</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>PUBLICFILL</td>
+	<td>是否公开可填写</td>
+	<td>1</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PUBLICVIEW</td>
+	<td>是否公开可查看</td>
+	<td>1</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SPECIALRIGHT</td>
+	<td>是否特殊权限可设置</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>tinyint</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

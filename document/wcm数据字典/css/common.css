@@ -1,0 +1,40 @@
+*{
+   font-size:18px;
+   font-family:'ËÎÌו' 'Courier New';   
+}
+
+body{
+	margin:4px;
+	padding:4px;
+}
+td{
+	white-space:nowrap;
+}
+.table{
+	border:1px solid lightgrey;
+	padding:2px;
+	margin:20px;
+	border-collapse:collapse;
+}
+.table td{
+	border:1px solid lightgrey;
+	display:table-cell;
+	empty-cells:show;
+	padding:2px;
+}
+
+thead td{
+ background:#ffeedd;
+ font-weight:bold;
+ text-align:center;
+}
+
+.notnull{
+	background-image:url("css/pk.gif");
+}
+img{
+ margin-left:4px;
+}
+.tabledesc{
+	margin-left:20px;
+}

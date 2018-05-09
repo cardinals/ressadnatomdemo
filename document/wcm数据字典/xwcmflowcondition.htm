@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>XWCMFLOWCONDITION</title>
+</head>
+<body>	
+	<p>XWCMFLOWCONDITION表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 工作流操作条件 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>FLOWCONDITIONID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>HANDLER</td>
+	<td>执行者</td>
+	<td>'0'</td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>100</td>
+	<td></td></tr>
+<tr>
+	<td>PARAMNAME</td>
+	<td>参数名称</td>
+	<td>'0'</td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>PARAMVALUE</td>
+	<td>参数值</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>RELATIONOPERATOR</td>
+	<td>比较操作符</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td>如大于,小于等</td></tr>
+<tr>
+	<td>ISANDOPERATOR</td>
+	<td>是否为与操作</td>
+	<td>1</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>RULEID</td>
+	<td>规则编号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="xwcmflowrule.htm">XWCMFLOWRULE</a>.FLOWRULEID</td></tr>
+<tr>
+	<td>CONDITIONORDER</td>
+	<td>序号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>30</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>UNITVALUE</td>
+	<td>参数值单位</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>20</td>
+	<td>如时间单位:分钟</td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMCHANNEL</title>
+</head>
+<body>	
+	<p>WCMCHANNEL表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 存储频道(栏目)的基本信息 </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>CHANNELID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SITEID</td>
+	<td>所属站点编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="wcmwebsite.htm">WCMWEBSITE</a>.SITEID</td></tr>
+<tr>
+	<td>CHNLNAME</td>
+	<td>名称(唯一标识)</td>
+	<td></td>
+	<td></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td><a href="#chnlname">名称</a></td></tr>
+<tr>
+	<td>CHNLDESC</td>
+	<td>描述(显示名称)</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>CHNLTABLE</td>
+	<td>数据检索表</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>CHNLQUERY</td>
+	<td>检索条件</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CHNLPROP</td>
+	<td>属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#prop">属性</a></td></tr>
+<tr>
+	<td>PARENTID</td>
+	<td>父栏目编号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href="#parentid">父编号</a></td></tr>
+<tr>
+	<td>CHNLORDER</td>
+	<td>序号</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>SCHEDULE</td>
+	<td>计划发布任务编号</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td>保留,<a href="#schedule">计划发布</a></td></tr>
+<tr>
+	<td>CHNLDATAPATH</td>
+	<td>存放位置</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td>保留,<a href="#datapath">存放位置</a></td></tr>
+<tr>
+	<td>CHNLORDERBY</td>
+	<td>栏目文档排序方式</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>500</td>
+	<td></td></tr>
+<tr>
+	<td>CRUSER</td>
+	<td>对象创建者</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
+<tr>
+	<td>CRTIME</td>
+	<td>对象创建时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>STATUS</td>
+	<td>状态</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td><a href='status'>状态</a></td></tr>
+<tr>
+	<td>CHNLTYPE</td>
+	<td>类型</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>CHNLOUTLINETEMP</td>
+	<td>概览模板</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td>保留</td></tr>
+<tr>
+	<td>CHNLDETAILTEMP</td>
+	<td>细览模板</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>PUBLISHPRO</td>
+	<td>发布属性</td>
+	<td>1</td>
+	<td></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>OPERUSER</td>
+	<td>删除栏目的操作用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>OPERTIME</td>
+	<td>被删除的时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LINKURL</td>
+	<td>链接地址</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td>链接型栏目有效</td></tr>
+<tr>
+	<td>CONTENTADDEDITPAGE</td>
+	<td>自定义编辑页面</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>CONTENTLISTPAGE</td>
+	<td>自定义内容(文档)列表页面</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>CONTENTSHOWPAGE</td>
+	<td>自定义内容查看页面</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>200</td>
+	<td></td></tr>
+<tr>
+	<td>OUTLINEFILEDS</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+<tr>
+	<td>OUTLINEDBFIELDS</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+	<p>
+	<strong>备注</strong>
+	<ol>
+		<li><a name='chnlname'></a>名称：栏目名称在同一个站点下唯一</li>
+		<li><a name='prop'></a>属性：是否允许发布,管理节点等属性</li>
+		<li><a name='parentid'></a>父编号：站点一级子栏目父编号为0</li>
+		<li><a name='schedule'></a>计划发布：<a href='wcmschedule.htm'>计划任务</a> </li>
+		<li><a name='datapath'></a>存放位置：见发布设置<a href='wcmfolderpublishconfig.htm'>WCMFOLDERPUBLISHCONFIG</a>.DATAPATH </li>
+		<li><a name='status'></a>状态：共三个有效值[正常=0,已删除=-1,父对象已删除=-2]</li>
+	</ol>
+	</p>
+</body>
+</html>

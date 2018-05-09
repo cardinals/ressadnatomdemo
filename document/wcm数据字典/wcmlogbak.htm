@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
+	<link href='css/common.css' type='text/css' rel='stylesheet'>
+	<title>WCMLOGBAK</title>
+</head>
+<body>	
+	<p>WCMLOGBAK表： </p>	
+	<p><img src='css/list.gif'>描述：</p>
+	<p class='tabledesc'> 日志备份表(<strong>保留,见<a href="wcmlog.htm">WCMLOG</a>表</strong>) </p>
+	<p><img src='css/list.gif'>结构：</p>	
+	<p>
+		<table class='table'>
+			<thead>
+				<tr>
+					<td>列名</td>				
+					<td>说明</td>
+					<td>默认值</td>
+					<td>允许空值</td>
+					<td>类型</td>
+					<td>长度</td>
+					<td>备注</td>
+				</tr>
+			</thead>
+			<tbody>
+<tr>
+	<td>LOGBAKID<img src='css/pk.gif'/></td>
+	<td>编号</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>BAKUSER</td>
+	<td>备份用户</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>BAKTIME</td>
+	<td>备份时间</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGUSERIP</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>TOPID</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGID</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGTYPE</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGDESC</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>3000</td>
+	<td></td></tr>
+<tr>
+	<td>LOGOBJNAME</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>3000</td>
+	<td></td></tr>
+<tr>
+	<td>LOGOBJTYPE</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGOBJID</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGOPTYPE</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGOPARGS</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+<tr>
+	<td>LOGRESULT</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>smallint</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>LOGUSER</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>50</td>
+	<td></td></tr>
+<tr>
+	<td>LOGOPTIME</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>datetime</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ATTRIBUTE</td>
+	<td>扩展属性</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>nvarchar</td>
+	<td>1000</td>
+	<td></td></tr>
+<tr>
+	<td>PARENTID</td>
+	<td>--列说明--</td>
+	<td>0</td>
+	<td></td>
+	<td>int</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>STIMEMILLIS</td>
+	<td>--列说明--</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>numeric</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>ETIMEMILLIS</td>
+	<td>--列说明--</td>
+	<td></td>
+	<td><img src='css/yes.gif'/></td>
+	<td>numeric</td>
+	<td></td>
+	<td></td></tr>
+<tr>
+	<td>EXECTIME</td>
+	<td>--列说明--</td>
+	<td>0</td>
+	<td><img src='css/yes.gif'/></td>
+	<td>numeric</td>
+	<td></td>
+	<td></td></tr>
+				
+			</tbody>
+		</table>
+	</p>
+</body>
+</html>
