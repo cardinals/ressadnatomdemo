@@ -13,6 +13,7 @@ import javax.persistence.Id;
 @Entity
 public class WCMCHANNEL {
 
+
     /**
      * 自增主键
      */
