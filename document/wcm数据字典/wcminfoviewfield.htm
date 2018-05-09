@@ -1,223 +1,246 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMINFOVIEWFIELD</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMINFOVIEWFIELD</title>
 </head>
-<body>	
-	<p>WCMINFOVIEWFIELD表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 自定义表单：表单字段 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>IVFIELDID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INFOVIEWID</td>
-	<td>所属表单编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID</td></tr>
-<tr>
-	<td>FIELDNAME</td>
-	<td>字段名称</td>
-	<td></td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>FIELDDESC</td>
-	<td>字段描述说明</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>PUBLICFILL</td>
-	<td>是否公开可填写</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>PUBLICVIEW</td>
-	<td>是否可公开查看内容</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SPECIALRIGHT</td>
-	<td>是否有特殊权限</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>NILLABLE</td>
-	<td>是否允许空值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DATATYPE</td>
-	<td>字段数字类型</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DATAPATTERN</td>
-	<td>数据范式</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td><a href="#datapattern">数据范式</a></td></tr>
-<tr>
-	<td>MAXLENGTH</td>
-	<td>允许的最大长度/值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>MINLENGTH</td>
-	<td>允许的最小长度/值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>FIXLENGTH</td>
-	<td>固定长度</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>FIELDTYPE</td>
-	<td>字段类型</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>varchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>DATACONTROL</td>
-	<td>数据控制</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>varchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DEFAULTVALUE</td>
-	<td>默认值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>ENUMVALUE</td>
-	<td>枚举可选值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>CLASSID</td>
-	<td>分类编号</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INOUTLINE</td>
-	<td>概览显示</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INSEARCH</td>
-	<td>是否可检索</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>XSLTXPATH</td>
-	<td>XSLT相关表达式</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>GATEWAYBINDING</td>
-	<td>infogate绑定内容</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>READONLY</td>
-	<td>只读字段</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-		<strong>备注</strong>
-		<ol>
-			<li><a name="datapattern"></a>数据范式:指可以动态置换的一些内容,如${cruser}等</li>
-		</ol>
-	</p>
+<body>
+<p>WCMINFOVIEWFIELD表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 自定义表单：表单字段 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>IVFIELDID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INFOVIEWID</td>
+        <td>所属表单编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID</td>
+    </tr>
+    <tr>
+        <td>FIELDNAME</td>
+        <td>字段名称</td>
+        <td></td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FIELDDESC</td>
+        <td>字段描述说明</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PUBLICFILL</td>
+        <td>是否公开可填写</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PUBLICVIEW</td>
+        <td>是否可公开查看内容</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SPECIALRIGHT</td>
+        <td>是否有特殊权限</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>NILLABLE</td>
+        <td>是否允许空值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DATATYPE</td>
+        <td>字段数字类型</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DATAPATTERN</td>
+        <td>数据范式</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td><a href="#datapattern">数据范式</a></td>
+    </tr>
+    <tr>
+        <td>MAXLENGTH</td>
+        <td>允许的最大长度/值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MINLENGTH</td>
+        <td>允许的最小长度/值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FIXLENGTH</td>
+        <td>固定长度</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FIELDTYPE</td>
+        <td>字段类型</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>varchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DATACONTROL</td>
+        <td>数据控制</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>varchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DEFAULTVALUE</td>
+        <td>默认值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ENUMVALUE</td>
+        <td>枚举可选值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CLASSID</td>
+        <td>分类编号</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INOUTLINE</td>
+        <td>概览显示</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INSEARCH</td>
+        <td>是否可检索</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>XSLTXPATH</td>
+        <td>XSLT相关表达式</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>GATEWAYBINDING</td>
+        <td>infogate绑定内容</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>READONLY</td>
+        <td>只读字段</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+    <strong>备注</strong>
+<ol>
+    <li><a name="datapattern"></a>数据范式:指可以动态置换的一些内容,如${cruser}等</li>
+</ol>
+</p>
 </body>
 </html>

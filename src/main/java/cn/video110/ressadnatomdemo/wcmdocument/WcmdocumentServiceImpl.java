@@ -23,7 +23,7 @@ public class WcmdocumentServiceImpl implements WcmdocumentService {
     }
 
     @Override
-    public List<Item> initItems(Integer docchannelId, Integer docstatus) {
+    public List<Item> packageItems(Integer docchannelId, Integer docstatus) {
         List<WCMDOCUMENT> wcmdocumentList = wcmDocumentRepository.findByDOCCHANNELAndDOCSTATUS(docchannelId, docstatus);
         List<Item> items = new ArrayList<Item>();
         wcmdocumentList.stream()

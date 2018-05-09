@@ -1,129 +1,141 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMFLOWDOCBAK</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMFLOWDOCBAK</title>
 </head>
-<body>	
-	<p>WCMFLOWDOCBAK表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 文档与工作流的关联关系(流转轨迹) </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>FLOWDOCID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>NODEID</td>
-	<td>文档所处节点编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td></tr>
-<tr>
-	<td>PRENODEID</td>
-	<td>文档所处的前一节点编号</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td></td></tr>
-<tr>
-	<td>POSTUSER</td>
-	<td>文档提交用户</td>
-	<td></td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>POSTTIME</td>
-	<td>文档提文时间</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>POSTDESC</td>
-	<td>文档提交说明</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-<tr>
-	<td>TOUSERS</td>
-	<td>文档提交的目标用户</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>300</td>
-	<td></td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>FLAG</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>smallint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>OBJTYPE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>OBJID</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMFLOWDOCBAK表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 文档与工作流的关联关系(流转轨迹) </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>FLOWDOCID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>NODEID</td>
+        <td>文档所处节点编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td>
+    </tr>
+    <tr>
+        <td>PRENODEID</td>
+        <td>文档所处的前一节点编号</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td>
+        </td></tr>
+    <tr>
+        <td>POSTUSER</td>
+        <td>文档提交用户</td>
+        <td></td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>POSTTIME</td>
+        <td>文档提文时间</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>POSTDESC</td>
+        <td>文档提交说明</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TOUSERS</td>
+        <td>文档提交的目标用户</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>300</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>FLAG</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>smallint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OBJTYPE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OBJID</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>

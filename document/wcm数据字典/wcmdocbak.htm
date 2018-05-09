@@ -1,425 +1,474 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMDOCBAK</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMDOCBAK</title>
 </head>
-<body>	
-	<p>WCMDOCBAK表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 文档的备份,各版本的内容(<strong>保留,见 <a href="wcmdocument.htm">WCMDOCUMENT</a> 表</strong>) </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>DOCBAKID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCID</td>
-	<td>文档编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCID</td></tr>
-<tr>
-	<td>DOCCHANNEL</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCVERSION</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCTYPE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCTITLE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>DOCSOURCE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCSECURITY</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCSTATUS</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCKIND</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCCONTENT</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>ntext</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCHTMLCON</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>ntext</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCABSTRACT</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>2000</td>
-	<td></td></tr>
-<tr>
-	<td>DOCKEYWORDS</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DOCRELWORDS</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DOCPEOPLE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DOCPLACE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DOCAUTHOR</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>DOCEDITOR</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>DOCAUDITOR</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>DOCOUTUPID</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCVALID</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCPUBURL</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>400</td>
-	<td></td></tr>
-<tr>
-	<td>DOCPUBTIME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCRELTIME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>BAKUSER</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>BAKTIME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCWORDSCOUNT</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCPRO</td>
-	<td>--列说明--</td>
-	<td>1</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>smallint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>RIGHTDEFINED</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>TITLECOLOR</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>varchar</td>
-	<td>20</td>
-	<td></td></tr>
-<tr>
-	<td>TEMPLATEID</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SCHEDULE</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCNO</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>4000</td>
-	<td></td></tr>
-<tr>
-	<td>DOCFLAG</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>EDITOR</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>HITSCOUNT</td>
-	<td>--列说明--</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCPUBHTMLCON</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>ntext</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SUBDOCTITLE</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-<tr>
-	<td>ATTACHPIC</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>smallint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCLINK</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>DOCFILENAME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>ATTRIBUTE</td>
-	<td>扩展属性</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-<tr>
-	<td>OPERTIME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>OPERUSER</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>DOCSOURCENAME</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>RANDOMSERIAL</td>
-	<td>--列说明--</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMDOCBAK表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 文档的备份,各版本的内容(<strong>保留,见 <a href="wcmdocument.htm">WCMDOCUMENT</a> 表</strong>) </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>DOCBAKID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCID</td>
+        <td>文档编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCID</td>
+    </tr>
+    <tr>
+        <td>DOCCHANNEL</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCVERSION</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCTYPE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCTITLE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSOURCE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSECURITY</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSTATUS</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCKIND</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCCONTENT</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>ntext</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCHTMLCON</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>ntext</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCABSTRACT</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>2000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCKEYWORDS</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCRELWORDS</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPEOPLE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPLACE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCAUTHOR</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCEDITOR</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCAUDITOR</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCOUTUPID</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCVALID</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPUBURL</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>400</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPUBTIME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCRELTIME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>BAKUSER</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>BAKTIME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCWORDSCOUNT</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPRO</td>
+        <td>--列说明--</td>
+        <td>1</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>smallint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>RIGHTDEFINED</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TITLECOLOR</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>varchar</td>
+        <td>20</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TEMPLATEID</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SCHEDULE</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCNO</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>4000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCFLAG</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EDITOR</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HITSCOUNT</td>
+        <td>--列说明--</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPUBHTMLCON</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>ntext</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SUBDOCTITLE</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ATTACHPIC</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>smallint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCLINK</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCFILENAME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ATTRIBUTE</td>
+        <td>扩展属性</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OPERTIME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OPERUSER</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSOURCENAME</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>RANDOMSERIAL</td>
+        <td>--列说明--</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>

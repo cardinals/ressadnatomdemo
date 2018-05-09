@@ -1,182 +1,200 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMCHNLDOC</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMCHNLDOC</title>
 </head>
-<body>	
-	<p>WCMCHNLDOC表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 栏目和文档之间的关联信息 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>RECID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CHNLID</td>
-	<td>栏目编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td></tr>
-<tr>
-	<td>DOCID</td>
-	<td>文档编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCID</td></tr>
-<tr>
-	<td>DOCORDER</td>
-	<td>序号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCSTATUS</td>
-	<td>文档状态</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td>'admin'</td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCPUBTIME</td>
-	<td>文档发布时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCPUBURL</td>
-	<td>文档发布后的链接地址</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>300</td>
-	<td></td></tr>
-<tr>
-	<td>DOCORDERPRI</td>
-	<td>文档置顶序号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INVALIDTIME</td>
-	<td>文档置顶失效时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>OPERUSER</td>
-	<td>删除文档的操作用户</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td><a href="wcmuser.htm">WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>OPERTIME</td>
-	<td>文档被删除的时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>MODAL</td>
-	<td>引用类型</td>
-	<td>1</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="#modal">引用类型</a></td></tr>
-<tr>
-	<td>DOCRELTIME</td>
-	<td>文档撰写时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCRELTIME</td></tr>
-<tr>
-	<td>DOCCHANNEL</td>
-	<td>所属栏目</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCCHANNEL</td></tr>
-<tr>
-	<td>DOCFLAG</td>
-	<td>标记</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCFLAG</td></tr>
-<tr>
-	<td>DOCKIND</td>
-	<td>分类编号</td>
-	<td>0</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCKIND</td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-		<ol>
-			<li><a name="modal"></a>类型：三个有效值[实体=1,链接引用=2,镜像引用=3]</li>	
-		</ol>
-	</p>
+<body>
+<p>WCMCHNLDOC表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 栏目和文档之间的关联信息 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>RECID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CHNLID</td>
+        <td>栏目编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td>
+    </tr>
+    <tr>
+        <td>DOCID</td>
+        <td>文档编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCID</td>
+    </tr>
+    <tr>
+        <td>DOCORDER</td>
+        <td>序号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSTATUS</td>
+        <td>文档状态</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td>'admin'</td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPUBTIME</td>
+        <td>文档发布时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCPUBURL</td>
+        <td>文档发布后的链接地址</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>300</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCORDERPRI</td>
+        <td>文档置顶序号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INVALIDTIME</td>
+        <td>文档置顶失效时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OPERUSER</td>
+        <td>删除文档的操作用户</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td><a href="wcmuser.htm">WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>OPERTIME</td>
+        <td>文档被删除的时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MODAL</td>
+        <td>引用类型</td>
+        <td>1</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="#modal">引用类型</a></td>
+    </tr>
+    <tr>
+        <td>DOCRELTIME</td>
+        <td>文档撰写时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCRELTIME</td>
+    </tr>
+    <tr>
+        <td>DOCCHANNEL</td>
+        <td>所属栏目</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCCHANNEL</td>
+    </tr>
+    <tr>
+        <td>DOCFLAG</td>
+        <td>标记</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCFLAG</td>
+    </tr>
+    <tr>
+        <td>DOCKIND</td>
+        <td>分类编号</td>
+        <td>0</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmdocument.htm">WCMDOCUMENT</a>.DOCKIND</td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+<ol>
+    <li><a name="modal"></a>类型：三个有效值[实体=1,链接引用=2,镜像引用=3]</li>
+</ol>
+</p>
 </body>
 </html>

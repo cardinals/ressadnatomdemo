@@ -1,153 +1,168 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMSTATVIEW</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMSTATVIEW</title>
 </head>
-<body>	
-	<p>WCMSTATVIEW表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 统计视图 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>STATVIEWID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>VIEWNAME</td>
-	<td>名称</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWDESC</td>
-	<td>描述说明</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWTYPE</td>
-	<td>视图类型</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>STATHOST</td>
-	<td>所属统计主体</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td><a href="wcmstathost.htm">WCMSTATHOST</a>.HOSTNAME</td></tr>
-<tr>
-	<td>RESULTTABLE</td>
-	<td>统计结果存储表名</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWSELECT</td>
-	<td>统计select部分</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWFROM</td>
-	<td>统计from部分</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWWHERE</td>
-	<td>统计where部分</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWORDERBY</td>
-	<td>统计order by 部分</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWGROUPBY</td>
-	<td>统计group by 部分</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWATTRIBUTE</td>
-	<td>扩展属性</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-<tr>
-	<td>TIMEFIELD</td>
-	<td>时间字段</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>30</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMSTATVIEW表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 统计视图 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>STATVIEWID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWNAME</td>
+        <td>名称</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWDESC</td>
+        <td>描述说明</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWTYPE</td>
+        <td>视图类型</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>STATHOST</td>
+        <td>所属统计主体</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td><a href="wcmstathost.htm">WCMSTATHOST</a>.HOSTNAME</td>
+    </tr>
+    <tr>
+        <td>RESULTTABLE</td>
+        <td>统计结果存储表名</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWSELECT</td>
+        <td>统计select部分</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWFROM</td>
+        <td>统计from部分</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWWHERE</td>
+        <td>统计where部分</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWORDERBY</td>
+        <td>统计order by 部分</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWGROUPBY</td>
+        <td>统计group by 部分</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWATTRIBUTE</td>
+        <td>扩展属性</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TIMEFIELD</td>
+        <td>时间字段</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>30</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>

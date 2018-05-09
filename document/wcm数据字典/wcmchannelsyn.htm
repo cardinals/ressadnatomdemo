@@ -1,120 +1,130 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMCHANNELSYN</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMCHANNELSYN</title>
 </head>
-<body>	
-	<p>WCMCHANNELSYN表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 存储频道的同步分发信息 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>CHANNELSYNID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SRCCHANNEL</td>
-	<td>源栏目编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td></tr>
-<tr>
-	<td>TOCHANNEL</td>
-	<td>目标栏目编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td></tr>
-<tr>
-	<td>WHERESQL</td>
-	<td>检索条件</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-<tr>
-	<td>SDATE</td>
-	<td>分发有效时间(开始)</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>EDATE</td>
-	<td>分发有效时间(结束)</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCSDATE</td>
-	<td>允许分发的文档创建时间(开始)</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DOCEDATE</td>
-	<td>允许分发的文档创建时间(结束)</td>
-	<td></td>
-	<td></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>STATUSES</td>
-	<td>允许分发的文档状态</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>300</td>
-	<td></td></tr>
-<tr>
-	<td>ATTRIBUTE</td>
-	<td>扩展属性</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>500</td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-	<strong>备注</strong>
-	<ol>
-		<li>SDATE,ENDATE:分发在这个时间区间有效</li>
-		<li>DOCSDATE,DOCEDATE:只有在这个时间区间内创建的文档才会分发</li>
-	</ol>
-	</p>
+<body>
+<p>WCMCHANNELSYN表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 存储频道的同步分发信息 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>CHANNELSYNID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SRCCHANNEL</td>
+        <td>源栏目编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td>
+    </tr>
+    <tr>
+        <td>TOCHANNEL</td>
+        <td>目标栏目编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmchannel.htm">WCMCHANNEL</a>.CHANNELID</td>
+    </tr>
+    <tr>
+        <td>WHERESQL</td>
+        <td>检索条件</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SDATE</td>
+        <td>分发有效时间(开始)</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EDATE</td>
+        <td>分发有效时间(结束)</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCSDATE</td>
+        <td>允许分发的文档创建时间(开始)</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DOCEDATE</td>
+        <td>允许分发的文档创建时间(结束)</td>
+        <td></td>
+        <td></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>STATUSES</td>
+        <td>允许分发的文档状态</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>300</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ATTRIBUTE</td>
+        <td>扩展属性</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>500</td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+    <strong>备注</strong>
+<ol>
+    <li>SDATE,ENDATE:分发在这个时间区间有效</li>
+    <li>DOCSDATE,DOCEDATE:只有在这个时间区间内创建的文档才会分发</li>
+</ol>
+</p>
 </body>
 </html>
