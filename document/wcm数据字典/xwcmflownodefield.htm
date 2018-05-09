@@ -1,135 +1,147 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>XWCMFLOWNODEFIELD</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>XWCMFLOWNODEFIELD</title>
 </head>
-<body>	
-	<p>XWCMFLOWNODEFIELD表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'>  工流节点相关字段(<strong>自定义表单</strong>) </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>FLOWNODEFIELDID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>FLOWID</td>
-	<td>工作流编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmflow.htm">WCMFLOW</a>.FLOWID</td></tr>
-<tr>
-	<td>NODEID</td>
-	<td>节点编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td></tr>
-<tr>
-	<td>FIELDNAME</td>
-	<td>字段名称</td>
-	<td>'0'</td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>FIELDDESC</td>
-	<td>字段说明</td>
-	<td>'0'</td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>30</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>WRITEFIELD</td>
-	<td>字段是否可写</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>READFIELD</td>
-	<td>字段是否可读</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INITVALUE</td>
-	<td>初始值</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>INITVALUECREATOR</td>
-	<td>初始值创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td></td></tr>
-<tr>
-	<td>FIELDTYPE</td>
-	<td>字段类型</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-	<strong>备注</strong>
-	<ol>
-		<li>实现自定义表单在流程中的字段级的权限控制</li>
-	</ol>
-	</p>
+<body>
+<p>XWCMFLOWNODEFIELD表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 工流节点相关字段(<strong>自定义表单</strong>) </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>FLOWNODEFIELDID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FLOWID</td>
+        <td>工作流编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmflow.htm">WCMFLOW</a>.FLOWID</td>
+    </tr>
+    <tr>
+        <td>NODEID</td>
+        <td>节点编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmflownode.htm">WCMFLOWNODE</a>.NODEID</td>
+    </tr>
+    <tr>
+        <td>FIELDNAME</td>
+        <td>字段名称</td>
+        <td>'0'</td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FIELDDESC</td>
+        <td>字段说明</td>
+        <td>'0'</td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>30</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>WRITEFIELD</td>
+        <td>字段是否可写</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>READFIELD</td>
+        <td>字段是否可读</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INITVALUE</td>
+        <td>初始值</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INITVALUECREATOR</td>
+        <td>初始值创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FIELDTYPE</td>
+        <td>字段类型</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+    <strong>备注</strong>
+<ol>
+    <li>实现自定义表单在流程中的字段级的权限控制</li>
+</ol>
+</p>
 </body>
 </html>

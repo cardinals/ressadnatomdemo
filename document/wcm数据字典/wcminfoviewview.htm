@@ -1,129 +1,141 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMINFOVIEWVIEW</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMINFOVIEWVIEW</title>
 </head>
-<body>	
-	<p>WCMINFOVIEWVIEW表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 自定义表单:内部视图(多视图表单) </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>IVVIEWID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>INFOVIEWID</td>
-	<td>所属表单编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID</td></tr>
-<tr>
-	<td>VIEWNAME</td>
-	<td>视图名称</td>
-	<td></td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWDESC</td>
-	<td>视图描述说明</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>200</td>
-	<td></td></tr>
-<tr>
-	<td>OLDXSLFILE</td>
-	<td>旧的xsl文件</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>NEWXSLFILE</td>
-	<td>新的xsl文件</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>VIEWWIDTH</td>
-	<td>视图宽度</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>16</td>
-	<td></td></tr>
-<tr>
-	<td>PUBLICFILL</td>
-	<td>是否可公开填写</td>
-	<td>1</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>PUBLICVIEW</td>
-	<td>是否可公开查看</td>
-	<td>1</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>DEFAULTVIEW</td>
-	<td>是否为默认视图</td>
-	<td>1</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SPECIALRIGHT</td>
-	<td>特殊权限</td>
-	<td>0</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>tinyint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>XSLPREFIX</td>
-	<td>xsl表达式前缀</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMINFOVIEWVIEW表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 自定义表单:内部视图(多视图表单) </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>IVVIEWID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>INFOVIEWID</td>
+        <td>所属表单编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcminfoview.htm">WCMINFOVIEW</a>.INFOVIEWID</td>
+    </tr>
+    <tr>
+        <td>VIEWNAME</td>
+        <td>视图名称</td>
+        <td></td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWDESC</td>
+        <td>视图描述说明</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>200</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OLDXSLFILE</td>
+        <td>旧的xsl文件</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>NEWXSLFILE</td>
+        <td>新的xsl文件</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>VIEWWIDTH</td>
+        <td>视图宽度</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>16</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PUBLICFILL</td>
+        <td>是否可公开填写</td>
+        <td>1</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PUBLICVIEW</td>
+        <td>是否可公开查看</td>
+        <td>1</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>DEFAULTVIEW</td>
+        <td>是否为默认视图</td>
+        <td>1</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SPECIALRIGHT</td>
+        <td>特殊权限</td>
+        <td>0</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>tinyint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>XSLPREFIX</td>
+        <td>xsl表达式前缀</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>

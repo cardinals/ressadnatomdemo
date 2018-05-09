@@ -1,185 +1,204 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMLOG</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMLOG</title>
 </head>
-<body>	
-	<p>WCMLOG表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 操作日志信息 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>LOGID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGTYPE</td>
-	<td>日志类型</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGDESC</td>
-	<td>日志描述</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>3000</td>
-	<td></td></tr>
-<tr>
-	<td>LOGOBJNAME</td>
-	<td>操作对象名称</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>3000</td>
-	<td></td></tr>
-<tr>
-	<td>LOGOBJTYPE</td>
-	<td>操作对象类型</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGOBJID</td>
-	<td>操作对象编号</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGOPTYPE</td>
-	<td>操作类型</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGOPARGS</td>
-	<td>操作参数</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>LOGRESULT</td>
-	<td>操作结果</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>smallint</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGUSER</td>
-	<td>操作用户</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td><a href="wcmuser.htm">WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>LOGOPTIME</td>
-	<td>操作时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>ATTRIBUTE</td>
-	<td>扩展属性</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-<tr>
-	<td>PARENTID</td>
-	<td>父日志编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>STIMEMILLIS</td>
-	<td>操作开始时间戳</td>
-	<td>0</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>numeric</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>ETIMEMILLIS</td>
-	<td>操作结束时间戳</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>numeric</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>EXECTIME</td>
-	<td>操作执行耗时</td>
-	<td>0</td>
-	<td><img src='css/yes.gif'/></td>
-	<td>numeric</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>LOGUSERIP</td>
-	<td>操作用户的登录IP</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>50</td>
-	<td></td></tr>
-<tr>
-	<td>TOPID</td>
-	<td>顶层日志编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>SIGNINFO</td>
-	<td>签名信息</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>1000</td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMLOG表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 操作日志信息 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>LOGID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGTYPE</td>
+        <td>日志类型</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGDESC</td>
+        <td>日志描述</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>3000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGOBJNAME</td>
+        <td>操作对象名称</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>3000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGOBJTYPE</td>
+        <td>操作对象类型</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGOBJID</td>
+        <td>操作对象编号</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGOPTYPE</td>
+        <td>操作类型</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGOPARGS</td>
+        <td>操作参数</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGRESULT</td>
+        <td>操作结果</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>smallint</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGUSER</td>
+        <td>操作用户</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td><a href="wcmuser.htm">WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>LOGOPTIME</td>
+        <td>操作时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ATTRIBUTE</td>
+        <td>扩展属性</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PARENTID</td>
+        <td>父日志编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>STIMEMILLIS</td>
+        <td>操作开始时间戳</td>
+        <td>0</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>numeric</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ETIMEMILLIS</td>
+        <td>操作结束时间戳</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>numeric</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EXECTIME</td>
+        <td>操作执行耗时</td>
+        <td>0</td>
+        <td><img src='css/yes.gif'/></td>
+        <td>numeric</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>LOGUSERIP</td>
+        <td>操作用户的登录IP</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>50</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TOPID</td>
+        <td>顶层日志编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>SIGNINFO</td>
+        <td>签名信息</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>1000</td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>

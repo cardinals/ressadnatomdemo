@@ -1,79 +1,84 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMEVENTSHARE</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMEVENTSHARE</title>
 </head>
-<body>	
-	<p>WCMEVENTSHARE表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 事件共享信息 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>EVENTSHAREID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>EVENTID</td>
-	<td>共享的事件编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmevent.htm">WCMEVENT</a>.EVENTID</td></tr>
-<tr>
-	<td>OBJID</td>
-	<td>共享该事件的对象编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>OBJTYPE</td>
-	<td>共享该事件的对象编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>30</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-	<strong>备注</strong>
-	<ol>
-		<li>OBJID,OBJTYPE共同确定共享该事件的对象,可以共享事件的包括用户、用户组、角色等对象</li>
-	</ol>
-	</p>
+<body>
+<p>WCMEVENTSHARE表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 事件共享信息 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>EVENTSHAREID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EVENTID</td>
+        <td>共享的事件编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmevent.htm">WCMEVENT</a>.EVENTID</td>
+    </tr>
+    <tr>
+        <td>OBJID</td>
+        <td>共享该事件的对象编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>OBJTYPE</td>
+        <td>共享该事件的对象编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>30</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+    <strong>备注</strong>
+<ol>
+    <li>OBJID,OBJTYPE共同确定共享该事件的对象,可以共享事件的包括用户、用户组、角色等对象</li>
+</ol>
+</p>
 </body>
 </html>

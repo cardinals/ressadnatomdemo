@@ -23,8 +23,8 @@ public class WcmchannelController {
 
     @GetMapping("/wcmchannel/channel")
     public Channel rss(Integer docchannelId) {
-        Channel channel = wcmchannelService.initChanl(docchannelId);
-        channel.setItems(wcmdocumentService.initItems(docchannelId, 10));
+        Channel channel = wcmchannelService.packageChanl(docchannelId);
+        channel.setItems(wcmdocumentService.packageItems(docchannelId, 10));
         return channel;
     }
 }

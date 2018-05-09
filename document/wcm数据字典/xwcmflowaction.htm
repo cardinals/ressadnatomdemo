@@ -1,95 +1,102 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>XWCMFLOWACTION</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>XWCMFLOWACTION</title>
 </head>
-<body>	
-	<p>XWCMFLOWACTION表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 工作流节点上执行的动作 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>FLOWACTIONID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>PARAMS</td>
-	<td>执行动作的相关参数</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>600</td>
-	<td></td></tr>
-<tr>
-	<td>RULEID</td>
-	<td>规则编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="xwcmflowrule.htm">XWCMFLOWRULE</a>.FLOWRULEID</td></tr>
-<tr>
-	<td>HANDLER</td>
-	<td>执行动作的处理者</td>
-	<td>'0'</td>
-	<td></td>
-	<td>nvarchar</td>
-	<td>100</td>
-	<td><a href="#handler">执行者</a></td></tr>
-<tr>
-	<td>ACTIONORDER</td>
-	<td>执行次序</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>30</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
-	<p>
-	<strong>备注</strong>
-	<ol>
-		<li><a name="handler"></a>执行者:com.trs.cms.process.engine.IActionHandler的具体实现类名</li>
-	</ol>
-	</p>
+<body>
+<p>XWCMFLOWACTION表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 工作流节点上执行的动作 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>FLOWACTIONID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PARAMS</td>
+        <td>执行动作的相关参数</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>600</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>RULEID</td>
+        <td>规则编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="xwcmflowrule.htm">XWCMFLOWRULE</a>.FLOWRULEID</td>
+    </tr>
+    <tr>
+        <td>HANDLER</td>
+        <td>执行动作的处理者</td>
+        <td>'0'</td>
+        <td></td>
+        <td>nvarchar</td>
+        <td>100</td>
+        <td><a href="#handler">执行者</a></td>
+    </tr>
+    <tr>
+        <td>ACTIONORDER</td>
+        <td>执行次序</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>30</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
+<p>
+    <strong>备注</strong>
+<ol>
+    <li><a name="handler"></a>执行者:com.trs.cms.process.engine.IActionHandler的具体实现类名</li>
+</ol>
+</p>
 </body>
 </html>

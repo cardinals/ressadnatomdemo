@@ -16,12 +16,8 @@ public class WcmchannelServiceImpl implements WcmchannelService {
         return wcmChannelRepository.findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull(SITEID, STATUS, PARENTID);
     }
 
-    public Optional<WCMCHANNEL> findById(Integer id) {
-        return wcmChannelRepository.findById(id);
-    }
-
     @Override
-    public Channel initChanl(Integer id) {
+    public Channel packageChanl(Integer id) {
         Optional<WCMCHANNEL> wcmchannel = wcmChannelRepository.findById(id);
         Channel channel = new Channel();
         channel.setFeedType("rss_2.0");

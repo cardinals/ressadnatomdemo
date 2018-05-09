@@ -1,121 +1,132 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
-	<meta http-equiv='content-type' content='text/html; charset=utf-8'>
-	<link href='css/common.css' type='text/css' rel='stylesheet'>
-	<title>WCMPUBLISHERRORLOG</title>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+    <link href='css/common.css' type='text/css' rel='stylesheet'>
+    <title>WCMPUBLISHERRORLOG</title>
 </head>
-<body>	
-	<p>WCMPUBLISHERRORLOG表： </p>	
-	<p><img src='css/list.gif'>描述：</p>
-	<p class='tabledesc'> 发布错误日志信息 </p>
-	<p><img src='css/list.gif'>结构：</p>	
-	<p>
-		<table class='table'>
-			<thead>
-				<tr>
-					<td>列名</td>				
-					<td>说明</td>
-					<td>默认值</td>
-					<td>允许空值</td>
-					<td>类型</td>
-					<td>长度</td>
-					<td>备注</td>
-				</tr>
-			</thead>
-			<tbody>
-<tr>
-	<td>PUBLISHERRORLOGID<img src='css/pk.gif'/></td>
-	<td>编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>PUBLISHTASKID</td>
-	<td>发布任务编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td><a href="wcmpublishtask.htm">WCMPUBLISHTASK</a>.PUBLISHTASKID</td></tr>
-<tr>
-	<td>FOLDERTYPE</td>
-	<td>文件夹类型</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>FOLDERID</td>
-	<td>文件夹编号</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CONTENTTYPE</td>
-	<td>内容对象类型</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>CONTENTID</td>
-	<td>内容对象编号</td>
-	<td>0</td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>PAGETASKDESC</td>
-	<td>页面任务描述</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>400</td>
-	<td></td></tr>
-<tr>
-	<td>EXERESULT</td>
-	<td>执行结果</td>
-	<td></td>
-	<td></td>
-	<td>int</td>
-	<td></td>
-	<td></td></tr>
-<tr>
-	<td>ERRORDETAIL</td>
-	<td>错误详细信息</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>4000</td>
-	<td></td></tr>
-<tr>
-	<td>CRUSER</td>
-	<td>对象创建者</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>nvarchar</td>
-	<td>30</td>
-	<td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td></tr>
-<tr>
-	<td>CRTIME</td>
-	<td>对象创建时间</td>
-	<td></td>
-	<td><img src='css/yes.gif'/></td>
-	<td>datetime</td>
-	<td></td>
-	<td></td></tr>
-				
-			</tbody>
-		</table>
-	</p>
+<body>
+<p>WCMPUBLISHERRORLOG表： </p>
+<p><img src='css/list.gif'>描述：</p>
+<p class='tabledesc'> 发布错误日志信息 </p>
+<p><img src='css/list.gif'>结构：</p>
+<p>
+<table class='table'>
+    <thead>
+    <tr>
+        <td>列名</td>
+        <td>说明</td>
+        <td>默认值</td>
+        <td>允许空值</td>
+        <td>类型</td>
+        <td>长度</td>
+        <td>备注</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>PUBLISHERRORLOGID<img src='css/pk.gif'/></td>
+        <td>编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PUBLISHTASKID</td>
+        <td>发布任务编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td><a href="wcmpublishtask.htm">WCMPUBLISHTASK</a>.PUBLISHTASKID</td>
+    </tr>
+    <tr>
+        <td>FOLDERTYPE</td>
+        <td>文件夹类型</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>FOLDERID</td>
+        <td>文件夹编号</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CONTENTTYPE</td>
+        <td>内容对象类型</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CONTENTID</td>
+        <td>内容对象编号</td>
+        <td>0</td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>PAGETASKDESC</td>
+        <td>页面任务描述</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>400</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>EXERESULT</td>
+        <td>执行结果</td>
+        <td></td>
+        <td></td>
+        <td>int</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ERRORDETAIL</td>
+        <td>错误详细信息</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>4000</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CRUSER</td>
+        <td>对象创建者</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>nvarchar</td>
+        <td>30</td>
+        <td><a href='wcmuser.htm'>WCMUSER</a>.USERNAME</td>
+    </tr>
+    <tr>
+        <td>CRTIME</td>
+        <td>对象创建时间</td>
+        <td></td>
+        <td><img src='css/yes.gif'/></td>
+        <td>datetime</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    </tbody>
+</table>
+</p>
 </body>
 </html>
