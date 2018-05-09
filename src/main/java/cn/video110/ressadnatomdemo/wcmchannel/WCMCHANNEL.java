@@ -17,6 +17,7 @@ public class WCMCHANNEL {
      * 自增主键
      */
     @Id
+
     private Integer CHANNELID;
 
     /**
