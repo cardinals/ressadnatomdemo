@@ -12,7 +12,6 @@ import javax.persistence.Id;
 @Data
 @Entity
 public class WCMCHANNEL {
-
     /**
      * 自增主键
      */
@@ -47,5 +46,4 @@ public class WCMCHANNEL {
      */
     @Column(name = "CHNLDATAPATH")
     private String cHNLDATAPATH;
-
 }

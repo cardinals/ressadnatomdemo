@@ -12,7 +12,6 @@ import javax.persistence.Id;
 @Data
 @Entity
 public class WCMGROUP {
-
     /**
      * 编号
      */

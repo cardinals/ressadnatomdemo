@@ -13,7 +13,6 @@ import java.sql.Timestamp;
 @Data
 @Entity
 public class WCMDOCUMENT {
-
     /**
      * 编号
      */

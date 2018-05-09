@@ -4,9 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface WcmDocumentRepository
-        extends JpaRepository<WCMDOCUMENT, Integer> {
-
+public interface WcmDocumentRepository extends JpaRepository<WCMDOCUMENT, Integer> {
     List<WCMDOCUMENT> findByDOCCHANNELAndDOCSTATUS(Integer docchannel, Integer docstatus);
 
     List<WCMDOCUMENT> findByDOCSTATUSIn(List<Integer> status);

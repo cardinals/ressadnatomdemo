@@ -9,15 +9,14 @@ import java.util.Optional;
 
 @Service
 public class WcmchannelServiceImpl implements WcmchannelService {
-
     @Autowired
     WcmChannelRepository wcmChannelRepository;
 
     public List<WCMCHANNEL> findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull(Integer SITEID, Integer STATUS, Integer PARENTID) {
-        return wcmChannelRepository.findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull( SITEID,  STATUS,  PARENTID);
+        return wcmChannelRepository.findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull(SITEID, STATUS, PARENTID);
     }
 
-    public Optional<WCMCHANNEL> findById(Integer id){
+    public Optional<WCMCHANNEL> findById(Integer id) {
         return wcmChannelRepository.findById(id);
     }
 
