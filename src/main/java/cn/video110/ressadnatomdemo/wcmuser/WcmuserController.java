@@ -13,7 +13,7 @@ public class WcmuserController {
     WcmuserRepository wcmuserRepository;
 
     @GetMapping("/wcmuser/findByUserId")
-    public List<WCMUSER> findByUSERID(Integer userId) {
-        return wcmuserRepository.findByUSERID(userId);
+    public List<WCMUSER> findByUSERID(List<Integer> userIdList) {
+        return wcmuserRepository.findByUSERIDIn(userIdList);
     }
 }

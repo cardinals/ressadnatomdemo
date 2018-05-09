@@ -7,5 +7,5 @@ import java.util.List;
 public interface WcmuserRepository
         extends JpaRepository<WCMUSER, Integer> {
 
-    List<WCMUSER> findByUSERID(Integer userId);
+    List<WCMUSER> findByUSERIDIn(List<Integer> userIdList);
 }

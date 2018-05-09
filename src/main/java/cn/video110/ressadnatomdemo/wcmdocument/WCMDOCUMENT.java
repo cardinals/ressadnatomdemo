@@ -52,9 +52,9 @@ public class WCMDOCUMENT {
     private Timestamp DOCPUBTIME;
 
     /**
-     * 作者
+     * 对象创建者
      */
-    private String DOCAUTHOR;
+    private String CRUSER;
 
     /**
      * 对象创建时间
