@@ -9,10 +9,10 @@ import java.util.List;
 @RestController
 public class WcmgroupController {
     @Autowired
-    WcmgroupRepository wcmgroupRepository;
+    WcmgroupService wcmgroupService;
 
     @GetMapping("/wcmgroup/findAll")
     public List<WCMGROUP> findAll() {
-        return wcmgroupRepository.findAll();
+        return wcmgroupService.findAll();
     }
 }

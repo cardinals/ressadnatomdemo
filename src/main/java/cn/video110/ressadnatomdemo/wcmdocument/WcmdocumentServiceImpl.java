@@ -1,19 +1,17 @@
 package cn.video110.ressadnatomdemo.wcmdocument;
 
-import cn.video110.ressadnatomdemo.wcmchannel.WcmChannelRepository;
 import com.rometools.rome.feed.rss.Description;
 import com.rometools.rome.feed.rss.Guid;
 import com.rometools.rome.feed.rss.Item;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class WcmdocumentServiceImpl implements WcmdocumentService {
-    @Autowired
-    WcmChannelRepository wcmChannelRepository;
     @Autowired
     WcmDocumentRepository wcmDocumentRepository;
 
@@ -43,9 +41,15 @@ public class WcmdocumentServiceImpl implements WcmdocumentService {
                     guid.setValue(doc.getDOCPUBURL());
                     item.setGuid(guid);
 
-                    item.setAuthor(doc.getDOCAUTHOR());
+                    item.setAuthor(doc.getCRUSER());
                     items.add(item);
                 });
         return items;
+    }
+
+    @Override
+    public List<WCMDOCUMENT> findByCRUSERInAndDOCSTATUSInAndCRTIMEBetweenAndDOCCHANNELIn
+            (List<String> userNameList, List<Integer> statusIdList, Timestamp startTime, Timestamp endTime, List<Integer> docChannelIdList) {
+        return wcmDocumentRepository.findByCRUSERInAndDOCSTATUSInAndCRTIMEBetweenAndDOCCHANNELIn(userNameList, statusIdList, startTime, endTime, docChannelIdList);
     }
 }

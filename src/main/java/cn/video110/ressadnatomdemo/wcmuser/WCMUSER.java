@@ -23,28 +23,29 @@ public class WCMUSER {
      * 状态
      */
     @Column(name = "STATUS")
-    private Integer STATUS;
+    private Integer sTATUS;
 
     /**
      * 昵称
      */
     @Column(name = "NICKNAME")
-    private String NICKNAME;
+    private String nICKNAME;
 
     /**
      * 真实名称
      */
-    private String TRUENAME;
+    @Column(name = "TRUENAME")
+    private String tRUENAME;
 
     /**
      * 是否已删除
      */
     @Column(name = "ISDELETED")
-    private Integer ISDELETED;
+    private Integer iSDELETED;
 
     /**
      * 用户名
      */
     @Column(name = "USERNAME")
-    private String USERNAME;
+    private String uSERNAME;
 }

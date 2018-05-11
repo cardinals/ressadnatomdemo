@@ -39,7 +39,8 @@ public class WCMCHANNEL {
     /**
      * 栏目名
      */
-    private String CHNLDESC;
+    @Column(name = "CHNLDESC")
+    private String cHNLDESC;
 
     /**
      * 链接

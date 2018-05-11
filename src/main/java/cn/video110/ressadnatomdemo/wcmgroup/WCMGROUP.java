@@ -27,7 +27,8 @@ public class WCMGROUP {
     /**
      * 名称
      */
-    private String GNAME;
+    @Column(name = "GNAME")
+    private String gNAME;
 
     /**
      * 说明描述

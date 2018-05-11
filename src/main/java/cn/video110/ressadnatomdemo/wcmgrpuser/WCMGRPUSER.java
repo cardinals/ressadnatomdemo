@@ -22,16 +22,17 @@ public class WCMGRPUSER {
      * 用户组编号
      */
     @Column(name = "GROUPID")
-    private Integer GROUPID;
+    private Integer gROUPID;
 
     /**
      * 用户编号
      */
-    private Integer USERID;
+    @Column(name = "USERID")
+    private Integer uSERID;
 
     /**
      * 是否是组管理员
      */
     @Column(name = "ISADMINISTRATOR")
-    private Integer ISADMINISTRATOR;
+    private Integer iSADMINISTRATOR;
 }

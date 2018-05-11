@@ -22,7 +22,8 @@ public class WCMDOCUMENT {
     /**
      * 文档标题
      */
-    private String DOCTITLE;
+    @Column(name = "DOCTITLE")
+    private String dOCTITLE;
 
     /**
      * 文档状态
@@ -39,25 +40,30 @@ public class WCMDOCUMENT {
     /**
      * 发布后的链接地址
      */
-    private String DOCPUBURL;
+    @Column(name = "DOCPUBURL")
+    private String dOCPUBURL;
 
     /**
      * 内容摘要
      */
-    private String DOCABSTRACT;
+    @Column(name = "DOCABSTRACT")
+    private String dOCABSTRACT;
 
     /**
      * 发布时间
      */
-    private Timestamp DOCPUBTIME;
+    @Column(name = "DOCPUBTIME")
+    private Timestamp dOCPUBTIME;
 
     /**
      * 对象创建者
      */
-    private String CRUSER;
+    @Column(name = "CRUSER")
+    private String cRUSER;
 
     /**
      * 对象创建时间
      */
-    private Timestamp CRTIME;
+    @Column(name = "CRTIME")
+    private Timestamp cRTIME;
 }

@@ -5,13 +5,3 @@ Bob --> Alice: Authentication Response
 Alice -> Bob: Another authentication Request
 Alice <-- Bob: another authentication Response
 @enduml
-
-@startsalt
-{
-  Login    | "MyName   "
-  Password | "****     "
-  [Cancel] | [  OK   ]
-}
-@endsalt
-
-
