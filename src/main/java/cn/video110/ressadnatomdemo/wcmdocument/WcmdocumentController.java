@@ -16,17 +16,14 @@ public class WcmdocumentController {
     WcmdocumentService wcmdocumentService;
 
     @GetMapping("/wcmdocument/rankCustom")
-    public Map<String, Map<Integer, Long>> rankCustom(List<String> userNameList, List<Integer> statusIdList,
-                                                      Timestamp startTime, Timestamp endTime, List<Integer> docChannelIdList) {
+    public Map<String, Map<Integer, Long>> rankCustom(List<String> userNameList, List<Integer> statusIdList, Timestamp startTime, Timestamp endTime, List<Integer> docChannelIdList) {
         Map<String, Map<Integer, Long>> result = new HashMap<String, Map<Integer, Long>>();
 
         wcmdocumentService
                 .findByCRUSERInAndDOCSTATUSInAndCRTIMEBetweenAndDOCCHANNELIn(userNameList, statusIdList, startTime, endTime, docChannelIdList)
                 .stream()
                 .collect(Collectors.groupingBy(WCMDOCUMENT::getCRUSER))
-                .forEach((k, v) ->
-                        result.put(k,
-                                v.stream().collect(Collectors.groupingBy(WCMDOCUMENT::getDOCSTATUS, Collectors.counting())))
+                .forEach((k, v) -> result.put(k, v.stream().collect(Collectors.groupingBy(WCMDOCUMENT::getDOCSTATUS, Collectors.counting())))
                 );
 
         return result;

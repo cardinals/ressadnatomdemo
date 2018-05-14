@@ -17,7 +17,8 @@ public class WCMUSER {
      * 编号
      */
     @Id
-    private Integer USERID;
+    @Column(name = "USERID")
+    private Integer uSERID;
 
     /**
      * 状态

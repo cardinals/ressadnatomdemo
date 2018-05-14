@@ -16,7 +16,8 @@ public class WCMCHANNEL {
      * 自增主键
      */
     @Id
-    private Integer CHANNELID;
+    @Column(name = "CHANNELID")
+    private Integer cHANNELID;
 
     /**
      * 站点主键

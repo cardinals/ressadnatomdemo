@@ -2,6 +2,7 @@ package cn.video110.ressadnatomdemo.wcmuser;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -10,10 +11,10 @@ import java.util.List;
 public class WcmuserController {
 
     @Autowired
-    WcmuserRepository wcmuserRepository;
+    WcmuserService wcmuserService;
 
     @GetMapping("/wcmuser/findByUserId")
-    public List<WCMUSER> findByUSERID(List<Integer> userIdList) {
-        return wcmuserRepository.findByUSERIDIn(userIdList);
+    public List<WCMUSER> findByUSERID(@RequestParam(value = "userIdList[]") List<Integer> userIdList) {
+        return wcmuserService.findByUSERIDIn(userIdList);
     }
 }

@@ -17,7 +17,8 @@ public class WCMDOCUMENT {
      * 编号
      */
     @Id
-    private Integer DOCID;
+    @Column(name = "DOCID")
+    private Integer dOCID;
 
     /**
      * 文档标题

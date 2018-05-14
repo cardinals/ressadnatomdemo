@@ -9,10 +9,10 @@ import java.util.List;
 @RestController
 public class WcmgrpuserController {
     @Autowired
-    WcmgrpuserRepository wcmgrpuserRepository;
+    WcmgrpuserService wcmgrpuserService;
 
-    @GetMapping("/wcmgroup/findByGROUPID")
+    @GetMapping("/wcmgrpuser/findByGROUPID")
     public List<WCMGRPUSER> findByGROUPID(Integer groupId) {
-        return wcmgrpuserRepository.findByGROUPID(groupId);
+        return wcmgrpuserService.findByGROUPID(groupId);
     }
 }

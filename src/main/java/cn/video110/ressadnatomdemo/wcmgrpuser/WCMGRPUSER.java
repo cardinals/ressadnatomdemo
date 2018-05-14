@@ -16,7 +16,8 @@ public class WCMGRPUSER {
      * 编号
      */
     @Id
-    private Integer GRPUSERID;
+    @Column(name = "GRPUSERID")
+    private Integer gRPUSERID;
 
     /**
      * 用户组编号

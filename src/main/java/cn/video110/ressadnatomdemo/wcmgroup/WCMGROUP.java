@@ -16,7 +16,8 @@ public class WCMGROUP {
      * 编号
      */
     @Id
-    private Integer GROUPID;
+    @Column(name = "GROUPID")
+    private Integer gROUPID;
 
     /**
      * 父组编号
@@ -34,5 +35,5 @@ public class WCMGROUP {
      * 说明描述
      */
     @Column(name = "GDESC")
-    private Integer gDESC;
+    private String gDESC;
 }
