@@ -20,6 +20,11 @@ public class WcmchannelController {
         return wcmchannelService.findBySITEIDAndSTATUSAndPARENTIDAndCHNLDATAPATHIsNotNull(4, 0, 0);
     }
 
+    /**
+     *
+     * @param docchannelId
+     * @return
+     */
     @GetMapping("/wcmchannel/channel")
     public Channel rss(Integer docchannelId) {
         Channel channel = wcmchannelService.packageChanl(docchannelId);
